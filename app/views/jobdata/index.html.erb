@@ -1,0 +1,10 @@
+<h1>Utah Open Data Job and Wages</h1>
+<% @jobwages.each do |key, val| %>
+<p> <b> Occupation </b> <%= key['occupation_title_1'] %>  </p>
+<p> <b> Hourly Median Wage </b><%= key['hourly_median_wage_or_the_50th_percentile'] %>  </p>
+<p> <b>Annual Median Wage </b><%= key['hourly_median_wage_or_the_50th_percentile'] %>  </p>
+<p> <b>Number of Jobs per 1,000 </b><%= key['of_jobs_per_1_000'] %>  </p>
+<p> <b>Total Employed </b><%= key['tot_emp'] %>  </p>
+<br/>
+<% end %>
+
